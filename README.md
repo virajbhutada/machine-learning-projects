@@ -2,6 +2,7 @@ THE SPARK FOUNDATION - Data Science & Business Analytics Internship GRIP SEPTEMB
 
 Author: VIRAJ NARENDRA BHUTADA Batch september 2023
 
+
 Task-1-Prediction-using-Supervised-Machine-Learning
 
 In this task it is required to predict the percentage of a student on the basis of number of hours studied using the Linear Regression supervised machine learning algorithm.
@@ -23,6 +24,7 @@ Step 5 - Visualizing the model
 Step 6 - Making predcitions
 
 Step 7 - Evaluating the model
+
 
 
 TASK - 2 Prediction using Unsupervised Machine Learning
