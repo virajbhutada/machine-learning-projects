@@ -1,45 +1,59 @@
-THE SPARK FOUNDATION - Data Science & Business Analytics Internship GRIP SEPTEMBER 2023
+# The Sparks Foundation - Data Science & Business Analytics Internship
+## GRIP (Graduate Rotational Internship Program) - September 2023
 
-Author: VIRAJ NARENDRA BHUTADA Batch september 2023
+### Author: **Viraj Narendra Bhutada** 
+
+---
+
+## Task 1: Prediction using Supervised Machine Learning 
+[![YouTube Video](https://cdn4.iconfinder.com/data/icons/social-media-and-logos-11/32/Logo_Youtube-128.png)](https://www.youtube.com/watch?v=PoV7-eMUqYw&t=11s)
+
+### Overview
+In this task, the goal is to predict a student's percentage based on the number of hours studied using the Linear Regression supervised machine learning algorithm.
+
+### Steps:
+
+1. **Importing the dataset**
+   - Utilize appropriate libraries (e.g., Pandas) to import the dataset.
+
+2. **Visualizing the dataset**
+   - Use data visualization tools (e.g., Matplotlib, Seaborn) to gain insights into the dataset.
+
+3. **Data preparation**
+   - Handle any missing or irrelevant data, perform feature scaling, and prepare the data for model training.
+
+4. **Training the algorithm**
+   - Implement Linear Regression for model training using the prepared dataset.
+
+5. **Visualizing the model**
+   - Visualize the trained model to understand its fit on the dataset.
+
+6. **Making predictions**
+   - Use the trained model to make predictions on new data.
+
+7. **Evaluating the model**
+   - Assess the model's performance using appropriate evaluation metrics.
+
+---
 
 
-Task-1-Prediction-using-Supervised-Machine-Learning
+## Task 2: Prediction using Unsupervised Machine Learning
+[![YouTube Video](https://cdn4.iconfinder.com/data/icons/social-media-and-logos-11/32/Logo_Youtube-128.png)](https://www.youtube.com/watch?v=xTRXOLI0VBQ)
 
-In this task it is required to predict the percentage of a student on the basis of number of hours studied using the Linear Regression supervised machine learning algorithm.
+### Overview
+This task involves using unsupervised machine learning to predict the optimum number of clusters in the 'Iris' dataset and visually representing the results.
 
-Data set : http://bit.ly/w-data
+### Steps:
 
-Steps:
+1. **Importing the dataset**
+   - Utilize libraries like Pandas to import the 'Iris' dataset.
 
-Step 1 - Importing the dataset
+2. **Visualizing the dataset**
+   - Use data visualization tools to explore and understand the structure of the 'Iris' dataset.
 
-Step 2 - Visualizing the dataset
+3. **Finding the Optimal Cluster for k-means classification**
+   - Implement k-means clustering to find the optimal number of clusters.
 
-Step 3 - Data preparation
+4. **Visualizing the Cluster**
+   - Use visualization techniques to represent the clusters visually.
 
-Step 4 - Training the algorithm
-
-Step 5 - Visualizing the model
-
-Step 6 - Making predcitions
-
-Step 7 - Evaluating the model
-
-
-
-TASK - 2 Prediction using Unsupervised Machine Learning
-
-Task Goal :-
-From the given 'Iris' dataset, predict optimum number of clusters and represent it visually using the unsupervised machine learning algorithm Dataset Info :- Iris Dataset contains 4 features of Iris ( Iris Versicolor, Iris Setosa, Iris Virginica)
-
-Data set :- https://bit.ly/3kXTdox
-
-Steps :
-
-Step 1 :- Importing the dataset
-
-Step 2 :- Visualizing the dataset
-
-Step 3 :- Finding Optimal Cluster for k-means classification
-
-step 4 : Visualizing the Cluster
