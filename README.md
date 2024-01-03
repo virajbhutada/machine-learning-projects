@@ -1,6 +1,5 @@
-# The Sparks Foundation - Data Science & Business Analytics Internship
+# The Sparks Foundation - Data Science & Business Analytics Internship 
 ## GRIP (Graduate Rotational Internship Program) - September 2023
-
 ### Author: **Viraj Narendra Bhutada** 
 
 ---
