@@ -1,6 +1,5 @@
 # The Sparks Foundation - Data Science & Business Analytics Internship 
 ## GRIP (Graduate Rotational Internship Program) - September 2023
-### Author: **Viraj Narendra Bhutada** 
 
 ---
 
@@ -62,6 +61,8 @@ This task involves using unsupervised machine learning to predict the optimum nu
   <img src="https://github.com/virajbhutada/Sparks-Foundation-Tasks/assets/143819712/9eed3309-e310-46f3-9bc1-5d454f39e20c" alt="Screenshot 2024-01-03 232119" width="800">
 </p>
 
+---
 
+### Author: **Viraj Narendra Bhutada** 
 
 
