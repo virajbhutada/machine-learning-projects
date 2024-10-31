@@ -1,41 +1,90 @@
 
 
-## Image Classification - SVM
+# Image Classification Projects: SVM for Cats & Dogs, and Decision Tree for Iris Species
 
-**Overview:**
-This repository features the implementation of a Support Vector Machine (SVM) model for classifying images of cats and dogs from the Kaggle dataset. The project explores the application of SVMs in handling high-dimensional image data, emphasizing feature extraction, model training, evaluation, and parameter optimization.
+## Overview
+This repository includes two machine-learning projects focused on classification tasks:
+1. **Cat and Dog Classification** using Support Vector Machine (SVM).
+2. **Iris Species Prediction** with a Decision Tree Classifier.
 
-**Dataset:**
-The training archive comprises 25,000 images of dogs and cats. The project focuses on training the SVM model using these files to enable accurate classification. Subsequently, the trained model predicts labels for test1.zip, differentiating between dogs (1) and cats (0).
+Both projects demonstrate data preprocessing, feature selection, model training, evaluation, and parameter optimization.
 
-Dataset: https://www.kaggle.com/c/dogs-vs-cats/data
+---
 
-**Project Tasks:**
+## Table of Contents
+1. [Cat and Dog Classification](#cat-and-dog-classification)
+    - [Dataset](#dataset)
+    - [Data Preprocessing](#data-preprocessing)
+    - [Model Training and Optimization](#model-training-and-optimization)
+    - [Results and Evaluation](#results-and-evaluation)
+2. [Iris Species Prediction](#iris-species-prediction)
+    - [Dataset and Introduction](#dataset-and-introduction)
+    - [Data Analysis and Feature Selection](#data-analysis-and-feature-selection)
+    - [Model Building and Evaluation](#model-building-and-evaluation)
+3. [Technologies Used](#technologies-used)
+4. [Conclusion](#conclusion)
 
-**1. Data Preprocessing:**
-- Loaded and processed cat and dog images from the Kaggle dataset.
-- Extracted HOG features and created a structured data frame with labels for model training.
+---
 
-**2. Model Training and Evaluation:**
-- Built an SVM model using sci-kit-learn, employing a linear kernel for initial training.
-- Split the data into training and testing sets, and evaluated the model using accuracy, precision, and recall metrics.
+## Cat and Dog Classification
 
-**3. Parameter Optimization:**
-- Utilized grid search to find optimal parameters, including the percentage of principal components and the choice of SVM kernel (linear, RBF, poly, sigmoid).
-- Identified the best-performing configuration: 90% of principal components and the RBF kernel, achieving an accuracy of approximately 67.57%.
+### Dataset
+The dataset, sourced from [Kaggle](https://www.kaggle.com/c/dogs-vs-cats/data), contains 25,000 labeled images, evenly split between cats and dogs.
 
-**4. Visualization and Interpretation:**
-- Visualized model performance using a confusion matrix, providing insights into true positive and true negative predictions.
-- Concluded the project, emphasizing the significance of parameter tuning and feature selection for enhancing classification accuracy.
+### Data Preprocessing
+- **Resizing**: All images are resized for uniformity.
+- **Feature Extraction**: Histogram of Oriented Gradients (HOG) used to capture shape features.
 
-**Project Outcome:**
-- Accuracy: ~67.57%
-- Best Parameters: PCA (90% components), SVM Kernel (RBF)
-- Conclusion: The optimized SVM model effectively classified cats and dogs images, showcasing the importance of fine-tuning parameters. This achievement sets the stage for future advancements in image recognition and computer vision applications.
+```python
+from skimage.feature import hog
+hog_features = hog(image, orientations=9, pixels_per_cell=(8, 8), cells_per_block=(2, 2))
+```
 
-**Technologies Used:**
-- Python: A programming language for data analysis and model implementation.
-- Scikit-Learn: Machine learning library for building and evaluating SVM models.
-- Matplotlib and Seaborn: Libraries for data visualization.
-- Jupyter Notebook: Interactive platform for running Python code and documenting the project.
+### Model Training and Optimization
+- **Model**: SVM with initial linear kernel, optimized via Grid Search to an RBF kernel with principal component analysis.
+- **Result**: Final model achieved ~67.57% accuracy.
+
+### Results and Evaluation
+The confusion matrix and accuracy provided insights into model performance.
+
+---
+
+## Iris Species Prediction
+
+### Dataset and Introduction
+The [Iris dataset](https://www.kaggle.com/uciml/iris), introduced by Ronald Fisher, includes 150 samples representing three species (*Setosa*, *Versicolor*, *Virginica*).
+
+### Data Analysis and Feature Selection
+- **EDA**: Pair plots highlighted petal dimensions as key discriminators among species.
+- **Feature Selection**: Petal Length and Width chosen for superior classification accuracy.
+
+```python
+selected_features = iris_db[['PetalLengthCm', 'PetalWidthCm']]
+species_labels = iris_db['Species']
+```
+
+### Model Building and Evaluation
+A Decision Tree Classifier was trained, achieving high accuracy using only the selected petal features.
+
+```python
+from sklearn.tree import DecisionTreeClassifier
+dt_model = DecisionTreeClassifier().fit(selected_features, species_labels)
+```
+
+---
+
+## Technologies Used
+- **Python**: Core programming language.
+- **Scikit-Learn**: Machine learning algorithms and evaluation tools.
+- **Matplotlib & Seaborn**: Data visualization.
+- **Jupyter Notebook**: Interactive project environment.
+
+---
+
+## Conclusion
+These projects illustrate key principles of machine learning:
+- **Image Classification** benefits from high-dimensional features and kernel optimization.
+- **Species Classification** leverages simpler data and interpretable models.
+
+Future improvements could explore deep learning for image classification and enhanced feature engineering for tabular data.
 
