@@ -2,7 +2,7 @@
 ## Customer Segmentation Project with K-means Clustering
 
 ## Overview
-This repository presents the implementation of a customer segmentation analysis using K-means clustering. The project focuses on grouping retail store customers based on their age, annual income, and spending score. By leveraging advanced data analysis techniques, the study aims to uncover distinct customer segments, enabling targeted marketing strategies and personalized customer experiences.
+This repository presents the implementation of a customer segmentation analysis using K-means clustering. The project groups retail store customers based on age, annual income, and spending score. The study aims to uncover distinct customer segments by leveraging advanced data analysis techniques, enabling targeted marketing strategies and personalized customer experiences.
 
 ## Dataset
 The analysis utilizes a dataset containing customer information, including features like 'Age,' 'Annual Income,' and 'Spending Score.' The dataset serves as the foundation for training and evaluating the clustering model.
@@ -28,7 +28,7 @@ The analysis utilizes a dataset containing customer information, including featu
   
 ## Project Outcome
 - **Optimal Clusters:** 5 clusters were determined as optimal for customer segmentation.
-- **Insights:** The analysis revealed distinct customer segments, aiding in targeted marketing efforts and personalized customer engagement.
+- **Insights:** The analysis revealed distinct customer segments, aiding targeted marketing efforts and personalized customer engagement.
   
 ## Technologies Used
 - **Python:** Programming language used for data analysis and visualization.
